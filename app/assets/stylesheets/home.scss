@@ -1,0 +1,35 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+  background-color: #f7feff;
+}
+.shop-gallery {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) ) ;
+
+  :hover {
+    background-color: #2E2F30;
+    color: #F7F7F7;
+    cursor: pointer;
+  }
+}
+
+.shop-gallery figure {
+  border-style: solid;
+  border-width: 0.2em;
+  border-color: #2E2F30;
+  padding: 1em;
+  margin: 0;
+
+  img {
+    max-width: 100%;
+    max-height: 80%;
+  }
+
+  figcaption {
+    position: relative;
+    bottom: 0;
+  }
+}
